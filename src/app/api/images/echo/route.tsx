@@ -32,7 +32,7 @@ export async function GET(req: NextRequest) {
             objectFit: "cover", // Cover the area without losing aspect ratio
             width: "35%", // Image takes up 40% of the container's width
           }}
-          src="https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/2639523a-690b-47af-16ab-ca07697fd000/original"
+          src="https://storage.googleapis.com/papyrus_images/ca02afacca6e22c8cd739469ffecf355.gif"
         />
         <div
           style={{
