@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     }
 
     const message = inputText ?? "";
-    const imageUrl = `${process.env["HOST"]}/api/images/echo?date=${Date.now()}&message=${message}`;
+    const imageUrl = `https://storage.googleapis.com/papyrus_images/ca02afacca6e22c8cd739469ffecf355.gif&message=${message}`;
     return new NextResponse(
       `<!DOCTYPE html>
       <html>
