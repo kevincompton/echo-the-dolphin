@@ -28,16 +28,16 @@ export async function GET(req: NextRequest) {
       >
         <img
           style={{
-            height: "100%", // Make image full height
+            height: "65%", // Make image full height
             objectFit: "cover", // Cover the area without losing aspect ratio
-            width: "65%", // Image takes up 40% of the container's width
+            width: "100%", // Image takes up 40% of the container's width
           }}
-          src="https://storage.googleapis.com/papyrus_images/ca02afacca6e22c8cd739469ffecf355.gif"
+          src="/splash.jpg"
         />
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "row",
             justifyContent: "flex-start",
             paddingLeft: 24,
             paddingRight: 24,
