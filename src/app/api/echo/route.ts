@@ -34,11 +34,9 @@ export async function POST(req: NextRequest) {
           <meta name="fc:frame" content="vNext" />
           <meta name="fc:frame:post_url" content="${postUrl}" />
           <meta name="fc:frame:image" content="${imageUrl}" />
-          <meta name="fc:frame:button:1" content="See code" />
-          <meta name="fc:frame:button:1:action" content="post_redirect" />
-          <meta name="fc:frame:button:2" content="Get your NFT GIF" />
-          <meta name="fc:frame:button:2:action" content="link" />
-          <meta name="fc:frame:button:2:target" content="https://airstack-nft-gif-builder.vercel.app/?address=${message}" />
+          <meta name="fc:frame:button:1" content="Get your NFT GIF" />
+          <meta name="fc:frame:button:1:action" content="link" />
+          <meta name="fc:frame:button:1:target" content="https://airstack-nft-gif-builder.vercel.app/?address=${message}" />
         </head>
         <body/>
       </html>`,
