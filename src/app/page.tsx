@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "fc:frame": "vNext",
       "fc:frame:image": imageUrl,
       "fc:frame:post_url": postUrl,
-      "fc:frame:input:text": "Enter address or Eth Address...",
+      "fc:frame:input:text": "Enter address or ENS...",
       "fc:frame:button:1": "Fetch NFTs",
     },
   };
