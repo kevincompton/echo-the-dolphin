@@ -57,7 +57,7 @@ export async function GET(req: NextRequest) {
               display: "flex"
             }}
           >
-            <strong>Fetching NFT's from...</strong>
+            <strong>Fetching NFT library from...</strong>
           </div>
           <div
             style={{
