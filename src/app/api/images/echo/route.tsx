@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
           style={{
             height: "100%", // Make image full height
             objectFit: "cover", // Cover the area without losing aspect ratio
-            width: "35%", // Image takes up 40% of the container's width
+            width: "65%", // Image takes up 40% of the container's width
           }}
           src="https://storage.googleapis.com/papyrus_images/ca02afacca6e22c8cd739469ffecf355.gif"
         />
@@ -57,7 +57,7 @@ export async function GET(req: NextRequest) {
               display: "flex"
             }}
           >
-            <strong>Echo Says...</strong>
+            <strong>Fetching NFT's from...</strong>
           </div>
           <div
             style={{

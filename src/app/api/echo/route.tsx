@@ -29,8 +29,8 @@ export async function POST(req: NextRequest) {
       `<!DOCTYPE html>
       <html>
         <head>
-          <title>Echo Says:</title>
-          <meta property="og:title" content="Echo Says:" />
+          <title>NFT Gif Generator</title>
+          <meta property="og:title" content="Fetching NFT library from:" />
           <meta property="og:image" content="${imageUrl}" />
           <meta name="fc:frame" content="vNext" />
           <meta name="fc:frame:post_url" content="${postUrl}" />
