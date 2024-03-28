@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSSLHubRpcClient, Message } from "@farcaster/hub-nodejs";
+import { ImageResponse } from '@vercel/og'
+
+export const config = {
+  runtime: 'edge',
+}
 
 const HUB_URL = process.env["HUB_URL"] || "nemes.farcaster.xyz:2283";
 const hubClient = getSSLHubRpcClient(HUB_URL);
@@ -23,7 +28,41 @@ export async function POST(req: NextRequest) {
     }
 
     const message = inputText ?? "";
-    const imageUrl = `https://storage.googleapis.com/papyrus_images/ca02afacca6e22c8cd739469ffecf355.gif&message=${message}`;
+  
+    const imageUrl = new ImageResponse(
+      (
+        <div
+          style={{
+            fontSize: 60,
+            color: 'black',
+            background: '#f6f6f6',
+            width: '100%',
+            height: '100%',
+            paddingTop: 50,
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            display: 'flex',
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            alt="avatar"
+            width="256"
+            src={`https://storage.googleapis.com/papyrus_images/ca02afacca6e22c8cd739469ffecf355.gif&message=${message}`}
+            style={{
+              borderRadius: 128,
+            }}
+          />
+          <p>NFT's for {message}</p>
+        </div>
+      ),
+      {
+        width: 1200,
+        height: 630,
+      }
+    )
+
     return new NextResponse(
       `<!DOCTYPE html>
       <html>
