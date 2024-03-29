@@ -14,6 +14,7 @@ let interBold = fs.readFileSync(interBoldPath);
 export async function GET(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;
   const message = searchParams.get("message") ?? "";
+  const splashImage = `${process.env["HOST"]}/splash.jpg`
   return new ImageResponse(
     (
       <div
@@ -32,7 +33,7 @@ export async function GET(req: NextRequest) {
             objectFit: "cover", // Cover the area without losing aspect ratio
             width: "100%", // Image takes up 40% of the container's width
           }}
-          src="/splash.jpg"
+          src={splashImage}
         />
         <div
           style={{
