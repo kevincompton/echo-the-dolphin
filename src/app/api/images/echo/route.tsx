@@ -47,14 +47,14 @@ export async function GET(req: NextRequest) {
             color: "black",
             flex: 1,
             overflow: "hidden",
-            marginTop: 24,
+            marginTop: 0,
           }}
         >
           <div
             style={{
               color: "#0a588c",
               fontSize: 72,
-              marginBottom: 12,
+              margin: "auto",
               display: "flex"
             }}
           >
