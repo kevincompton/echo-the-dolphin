@@ -4,7 +4,7 @@ import Echo from "@/app/components/Echo";
 const postUrl = `${process.env["HOST"]}/api/echo`;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const imageUrl = `/intro.gif`;
+  const imageUrl = `intro.gif`;
   return {
     title: "Echo the Dolphin",
     description: "Type something and Echo will say it back!",
