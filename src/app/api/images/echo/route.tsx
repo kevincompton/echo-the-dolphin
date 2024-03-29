@@ -29,16 +29,16 @@ export async function GET(req: NextRequest) {
       >
         <img
           style={{
-            height: "65%", // Make image full height
+            height: "100%", // Make image full height
             objectFit: "cover", // Cover the area without losing aspect ratio
-            width: "100%", // Image takes up 40% of the container's width
+            width: "65%", // Image takes up 40% of the container's width
           }}
           src={splashImage}
         />
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
             justifyContent: "flex-start",
             paddingLeft: 24,
             paddingRight: 24,
@@ -47,14 +47,14 @@ export async function GET(req: NextRequest) {
             color: "black",
             flex: 1,
             overflow: "hidden",
-            marginTop: 0,
+            marginTop: 24,
           }}
         >
           <div
             style={{
               color: "#0a588c",
               fontSize: 72,
-              margin: "auto",
+              marginBottom: 12,
               display: "flex"
             }}
           >
